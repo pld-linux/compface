@@ -66,9 +66,6 @@ install compface.h $RPM_BUILD_ROOT%{_includedir}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post   devel -p /sbin/ldconfig
-%postun devel -p /sbin/ldconfig
-
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
