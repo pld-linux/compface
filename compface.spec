@@ -8,6 +8,9 @@ License:	MIT
 Group:		Applications/Graphics
 Source0:	http://metalab.unc.edu/pub/Linux/apps/graphics/convert/%{name}-%{version}.tar.gz
 Patch0:		%{name}-errno.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -22,10 +25,9 @@ pikseli, które mo¿na przekazywaæ w nag³ówkach listów elektronicznych
 czy postach na grupy dyskusyjne.
 
 %package devel
-
 Summary:	Image from/to X-Face conversion libraries
 Summary(pl):	Biblioteki do konwersji obrazu z/do formatu X-Face
-Group:		Libraries
+Group:		Development/Libraries
 
 %description devel
 Compface provides a library to convert from/to X-Face format, a 48x48
