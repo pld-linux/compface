@@ -2,11 +2,12 @@ Summary:	Image from/to X-Face conversion utilities
 Summary(pl):	Narzêdzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
 Version:	1.4
-Release:	1
+Release:	2
 Epoch:		1
 License:	MIT
 Group:		Applications/Graphics
 Source0:	http://metalab.unc.edu/pub/Linux/apps/graphics/convert/%{name}-%{version}.tar.gz
+Patch0:		%{name}-errno.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,6 +40,7 @@ dyskusyjne.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__libtoolize}
