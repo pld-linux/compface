@@ -1,0 +1,42 @@
+diff -ur compface-1.4/cmain.c compface-1.4-/cmain.c
+--- compface-1.4/cmain.c	Thu Nov 23 01:51:03 2000
++++ compface-1.4-/cmain.c	Fri Apr  4 19:03:16 2003
+@@ -36,6 +36,8 @@
+ #include <string.h>
+ #endif
+ 
++#include <errno.h>
++
+ #include "compface.h"
+ 
+ /* the buffer is longer than needed to handle sparse input formats */
+@@ -57,8 +59,6 @@
+ extern int errno, sys_nerr;
+ extern char *sys_errlist[];
+ #else
+-extern int errno;
+-char *strerror();
+ char *strerrorwrap();
+ #endif
+ 
+diff -ur compface-1.4/uncmain.c compface-1.4-/uncmain.c
+--- compface-1.4/uncmain.c	Thu Nov 23 01:51:24 2000
++++ compface-1.4-/uncmain.c	Fri Apr  4 19:03:44 2003
+@@ -36,6 +36,8 @@
+ #include <string.h>
+ #endif
+ 
++#include <errno.h>
++
+ #include "compface.h"
+ 
+ /* the buffer is longer than needed to handle sparse input formats */
+@@ -57,8 +59,6 @@
+ extern int errno, sys_nerr;
+ extern char *sys_errlist[];
+ #else
+-extern int errno;
+-char *strerror();
+ char *strerrorwrap();
+ #endif
+ 
