@@ -7,6 +7,7 @@ Epoch:		1
 License:	MIT
 Group:		Applications/Graphics
 Source0:	http://metalab.unc.edu/pub/Linux/apps/graphics/convert/%{name}-%{version}.tar.gz
+# Source0-md5:	c45b54f67cc5d3580a18e4113219bc26
 Patch0:		%{name}-errno.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
