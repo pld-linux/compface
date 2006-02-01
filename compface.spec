@@ -1,13 +1,13 @@
 Summary:	Image from/to X-Face conversion utilities
 Summary(pl):	Narzêdzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
-Version:	1.5.1
+Version:	1.5.2
 Release:	1
 Epoch:		1
 License:	MIT
 Group:		Applications/Graphics
 Source0:	http://freshmeat.net/redir/compface/1439/url_tgz/%{name}-%{version}.tar.gz
-# Source0-md5:	32ab72ac7412ffa5eec4e88a89b8fd74
+# Source0-md5:	62f4f79c0861ad292ba3cf77b4c48319
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
