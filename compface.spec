@@ -1,3 +1,5 @@
+# TODO
+# - devel collides with faces-devel
 Summary:	Image from/to X-Face conversion utilities
 Summary(pl):	Narzêdzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
