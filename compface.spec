@@ -1,7 +1,7 @@
 # TODO
 # - devel collides with faces-devel
 Summary:	Image from/to X-Face conversion utilities
-Summary(pl.UTF-8):   Narzędzia do konwersji obrazu z/do formatu X-Face
+Summary(pl.UTF-8):	Narzędzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
 Version:	1.5.2
 Release:	1
@@ -28,7 +28,7 @@ czy postach na grupy dyskusyjne.
 
 %package devel
 Summary:	Image from/to X-Face conversion libraries
-Summary(pl.UTF-8):   Biblioteki do konwersji obrazu z/do formatu X-Face
+Summary(pl.UTF-8):	Biblioteki do konwersji obrazu z/do formatu X-Face
 Group:		Development/Libraries
 
 %description devel
