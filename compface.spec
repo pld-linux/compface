@@ -1,7 +1,7 @@
 # TODO
 # - devel collides with faces-devel
 Summary:	Image from/to X-Face conversion utilities
-Summary(pl):	Narzêdzia do konwersji obrazu z/do formatu X-Face
+Summary(pl.UTF-8):   NarzÄ™dzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
 Version:	1.5.2
 Release:	1
@@ -20,15 +20,15 @@ Compface provides utilities to convert from/to X-Face format, a 48x48
 bitmap format used to carry thumbnails of email authors in a mail
 header.
 
-%description -l pl
-Compface to para narzêdzi s³u¿±cych do konwersji z i do formatu
-X-Face. Format ten s³u¿y do przechowywania bitmap o wymiarach 48x48
-pikseli, które mo¿na przekazywaæ w nag³ówkach listów elektronicznych
+%description -l pl.UTF-8
+Compface to para narzÄ™dzi sÅ‚uÅ¼Ä…cych do konwersji z i do formatu
+X-Face. Format ten sÅ‚uÅ¼y do przechowywania bitmap o wymiarach 48x48
+pikseli, ktÃ³re moÅ¼na przekazywaÄ‡ w nagÅ‚Ã³wkach listÃ³w elektronicznych
 czy postach na grupy dyskusyjne.
 
 %package devel
 Summary:	Image from/to X-Face conversion libraries
-Summary(pl):	Biblioteki do konwersji obrazu z/do formatu X-Face
+Summary(pl.UTF-8):   Biblioteki do konwersji obrazu z/do formatu X-Face
 Group:		Development/Libraries
 
 %description devel
@@ -36,10 +36,10 @@ Compface provides a library to convert from/to X-Face format, a 48x48
 bitmap format used to carry thumbnails of email authors in a mail
 header.
 
-%description devel -l pl
-Biblioteka s³u¿±ca do konwersji z i do formatu X-Face. Format ten
-s³u¿y do przechowywania bitmap o wymiarach 48x48 pikseli, które mo¿na
-przekazywaæ w nag³ówkach listów elektronicznych czy postach na grupy
+%description devel -l pl.UTF-8
+Biblioteka sÅ‚uÅ¼Ä…ca do konwersji z i do formatu X-Face. Format ten
+sÅ‚uÅ¼y do przechowywania bitmap o wymiarach 48x48 pikseli, ktÃ³re moÅ¼na
+przekazywaÄ‡ w nagÅ‚Ã³wkach listÃ³w elektronicznych czy postach na grupy
 dyskusyjne.
 
 %prep
