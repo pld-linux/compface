@@ -4,7 +4,7 @@ Summary:	Image from/to X-Face conversion utilities
 Summary(pl.UTF-8):	Narzędzia do konwersji obrazu z/do formatu X-Face
 Name:		compface
 Version:	1.5.2
-Release:	2
+Release:	3
 Epoch:		1
 License:	MIT
 Group:		Applications/Graphics
