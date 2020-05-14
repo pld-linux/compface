@@ -8,11 +8,13 @@ Release:	3
 Epoch:		1
 License:	MIT
 Group:		Applications/Graphics
-Source0:	http://freshmeat.net/redir/compface/1439/url_tgz/%{name}-%{version}.tar.gz
+Source0:	http://ftp.xemacs.org/pub/xemacs/aux/%{name}-%{version}.tar.gz
 # Source0-md5:	62f4f79c0861ad292ba3cf77b4c48319
+URL:		http://freshmeat.sourceforge.net/projects/compface
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+Conflicts:	faces
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,6 +32,7 @@ czy postach na grupy dyskusyjne.
 Summary:	Image from/to X-Face conversion libraries
 Summary(pl.UTF-8):	Biblioteki do konwersji obrazu z/do formatu X-Face
 Group:		Development/Libraries
+Conflicts:	faces-devel
 
 %description devel
 Compface provides a library to convert from/to X-Face format, a 48x48
@@ -58,10 +61,10 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/{man1,man3},%{_libdir},%{_inclu
 
 install compface $RPM_BUILD_ROOT%{_bindir}
 install uncompface $RPM_BUILD_ROOT%{_bindir}
-install compface.1 $RPM_BUILD_ROOT%{_mandir}/man1
-install compface.3 $RPM_BUILD_ROOT%{_mandir}/man3
-install libcompface.a $RPM_BUILD_ROOT%{_libdir}
-install compface.h $RPM_BUILD_ROOT%{_includedir}
+cp -p compface.1 $RPM_BUILD_ROOT%{_mandir}/man1
+cp -p compface.3 $RPM_BUILD_ROOT%{_mandir}/man3
+cp -p libcompface.a $RPM_BUILD_ROOT%{_libdir}
+cp -p compface.h $RPM_BUILD_ROOT%{_includedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -69,7 +72,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/compface
+%attr(755,root,root) %{_bindir}/uncompface
 %{_mandir}/man1/compface.1*
 
 %files devel
